@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../styles/main.css">
+
+<head>
+        <title>Input Page</title>
+</head>
+    
+    
+<body>
+     <div id="page-container">
+     <header>
+        
+                                <div class="topnav" id="myTopnav">
+                                    <a class="logo">Smart Simple SEO</a>
+                                <a href="../index.html">Home</a>
+                                <a id="dashboardclick" href="#" class="active">Dashboard</a>
+                                <a href="../pages/login.html">Login/Sign up</a>
+                                <a href="#">Contact</a>
+                                      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                          <i class="fa fa-bars"></i>
+                                    </a>
+                </div>
+        </header>
+         
+  
+          <div class="row">
+        <div class="column1">
+            <h2>Account Information</h2>
+            <a href="../pages/payment.html"><h4>Payment/Upgrade</h4></a>
+            <hr style="border: 1px solid black;" width="100%" />
+            <a href="../pages/dashboard.html"><h4>Dashboard</h4></a>
+            <hr style="border: 1px solid black;" width="100%" />
+            <a href="../pages/results.html"><h4>My SEO</h4></a>
+            <hr style="border: 1px solid black;" width="100%" />
+        </div>
+        <div class="column2">
+            
+             <p id="userError">Error comes here!!!!</p>
+            
+            <label for="firstName">First Name:<b></b></label>
+            <input id="firstName" class="signUp" type="text" placeholder="User FirstName" size="30" name="firstName"><br><br>
+            
+            <label for="lastName">Last Name:<b></b></label>
+            <input id="lastName" class="signUp" type="text" placeholder="User LastName" size="30" name="lastName"><br><br>
+            
+            <label for="email">Email:<b></b></label>
+            <input id="email" class="signUp" type="email" placeholder="User Email" size="37" name="email"><br><br>
+            
+            <label for="psw">Password:<b></b></label>
+            <input id="password" class="signUp" type="password" placeholder="*********" size="32" name="psw" required><br><br>
+            
+            <button class="userbtn" type="submit" name="submit" id="save">Save</button>
+            <button class="userbtn" type="submit" name="submit" id="save">Cancel</button><br>
+
+        </div>
+    </div>
+
+<footer>
+    <div class="content-footer">
+        Company name:Smashing Pixels Inc<br><br>
+        Contact information: 446 Grey Street, Unit 302
+        (with Ball Media)
+        Brantford , ON N3S 7L6
+        Tel: (226) 250-0112</div>
+</footer>
+    </div>
+    
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<script src="../scripts/account.js"></script>
+<script src="../scripts/validate.js"></script>         
+</body>
+
+
+
+</html>

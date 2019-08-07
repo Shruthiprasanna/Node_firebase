@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../styles/main.css">
+
+<head>
+        <title>Login</title>
+</head>
+    
+    
+<body>
+     <div id="page-container">
+     <header>
+        
+                                <div class="topnav" id="myTopnav">
+                                    <a class="logo">Smart Simple SEO</a>
+                                <a href="../index.html">Home</a>
+                                <a id="dashboardclick" href="#">Dashboard</a>
+                                <a href="../pages/login.html"  class="active">Login/Sign up</a>
+                                <a href="#">Contact</a>
+                                      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                          <i class="fa fa-bars"></i>
+                                    </a>
+                </div>
+        </header>
+         
+        <section>
+          <div id="content-wrap">
+    <form class="form02">
+            <h2>Welcome Back</h2><br>
+        <p id="loginError">Error Comes Here!!</p>
+            <p5>Email address: </p5>
+            <input id="emailUser" class="signUp" type="email" placeholder="Enter Username or Email" Email address="" size="35" required> <br> <br>
+            <p6>Password: </p6>
+            <input id="passwordUser" class="signUp" type="password" placeholder="Enter Password"  size="40" required> <br>
+            <p> <a href="../pages/passwordReset.html">Forgot Password</a>
+            </p>
+            <button onclick="window.location.href = '../pages/dashboard.html';" class="userbtn" type="submit" name="submit" id="loginSubmit">Log-in</button>
+            <p>New User? <a href="../pages/signup.html">Sign-up</a></p>
+        </form>
+    </div>
+</section>
+            
+   
+         <div class=imgfooter>
+<img src="../images/login01.jpg" alt="login" height="10%" width="100%">
+             </div>
+
+<footer>
+    <div class="content-footer">
+        Company name:Smashing Pixels Inc<br><br>
+        Contact information: 446 Grey Street, Unit 302
+        (with Ball Media)
+        Brantford , ON N3S 7L6
+        Tel: (226) 250-0112</div>
+</footer>
+    </div>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<script src="../scripts/login.js"></script>
+         </body>
+
+</html>

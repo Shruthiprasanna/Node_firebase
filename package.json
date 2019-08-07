@@ -1,0 +1,19 @@
+{
+  "name": "smartsimpleseo",
+  "version": "1.0.0",
+  "description": "Smart Simple SEO",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.3.0",
+    "html-word-count": "2.0.0",
+    "node-fetch": "^2.6.0",
+    "path": "^0.12.7"
+  }
+}

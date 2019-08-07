@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../Styles/main.css">
+
+
+<head>
+  <title>Output Page</title>
+</head>
+
+
+<body>
+  <div id="page-container">
+    <header>
+
+      <div class="topnav" id="myTopnav">
+        <a class="logo">Smart Simple SEO</a>
+        <a href="../index.html">Home</a>
+        <a id="dashboardclick" href="#" class="active">Dashboard</a>
+        <a href="../pages/login.html">Login/Sign up</a>
+        <a href="#">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+
+    <div id="content-wrap">
+      <div class="form01">
+        <h3>Your Page Analysed</h3>&nbsp;&nbsp;<a label id="firstUrl">shimamaleki.com</a>
+
+        <div id="results"></div>
+
+        <div class="wrapper">
+          <button id="" class="userbtn">Save</button>
+          <button id="" class="userbtn" id="logout">Print</button>
+          <button onclick="window.location.href = '../pages/input.html';" id="" class="userbtn" id="logout">Run Another
+            report</button>
+        </div>
+        <div class="midCircle">
+
+          <div class="circle">
+            <h3>Package</h3>
+            <h4>Unlimitted access for monthly 9.99</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.</p>
+
+            <button class="userbtn" id="freeBtn">Try for Free</button>
+          </div>
+
+        </div>
+      </div>
+
+
+      <footer>
+        <div class="content-footer">
+          Company name:Smashing Pixels Inc<br><br>
+          Contact information: 446 Grey Street, Unit 302
+          (with Ball Media)
+          Brantford , ON N3S 7L6
+          Tel: (226) 250-0112</div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <script src="../scripts/output.js"></script>
+</body>
+
+</html>

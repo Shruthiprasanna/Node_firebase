@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../styles/results.css">
+
+
+
+<head>
+        <title>Input Page</title>
+</head>
+    
+    
+<body>
+     <div id="page-container">
+     <header>
+        
+                                <div class="topnav" id="myTopnav">
+                                    <a class="logo">Smart Simple SEO</a>
+                                <a href="../index.html">Home</a>
+                                <a id="dashboardclick" href="#" class="active">Dashboard</a>
+                                <a href="../pages/login.html">Login/Sign up</a>
+                                <a href="#">Contact</a>
+                                      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                          <i class="fa fa-bars"></i>
+                                    </a>
+                </div>
+        </header>
+         
+  
+               <div id="content-wrap">
+         <div class="form01">
+    <h2>SEO Report is Ready</h2>
+    <div id="url" class="" name="">www.shimamaleki.com/home</div>
+    <div id="piechart"></div>
+    <hr style="border: 2px solid black;" width="100%" />
+
+    <div class="row1">
+        <div class="column">
+                <h3><div id="" style="width:100px;height:25px;border:1px solid #000;">Your Page</div></h3>
+            <br>
+            <span id="" class="dot"></span><script></script><br>
+            <span id="" class="dot"></span><script></script><br>
+            <span id="" class="dot"></span><script></script><br>
+            <span id="" class="dot"></span><script></script><br>
+        </div>
+        <div class="column">
+                <h3><div id="" style="width:30px;height:25px;border:1px solid #000;">VS</div></h3>
+            <br>
+            <span id="" class="dot"></span><script></script><br>
+            <span id="" class="dot"></span><script></script><br>
+            <span id="" class="dot"></span><script></script><br>
+            <span id="" class="dot"></span><script></script><br>
+        </div>
+        <div class="column">
+            <h3><div id="" style="width:150px;height:25px;border:1px solid #000;">Your Competitor</div></h3>
+            <br>
+            <div id="" style="width:300px;height:50px;border:1px solid #000;">The average is 7</div>
+            <div id="" style="width:300px;height:50px;border:1px solid #000;">The average is 10</div>
+            <div id="" style="width:300px;height:50px;border:1px solid #000;">The average is 13</div>
+            <div id="" style="width:300px;height:50px;border:1px solid #000;">The average is 7</div>
+        </div>
+    </div>
+    <div>
+        <button class="row2" type="button" id="save">Save</button>
+        <button class="row2" type="button" id="print">Print</button>
+    </div>
+    <div class="row3">
+        <div class=column>
+            <h2>Very Well!</h2>
+            <p>Check what you already did!</p>
+            <br>
+            <img src="../images/arrow.jpg" alt="" height="70" width="300">
+        </div>
+        <div class=column>
+            <button class="collapsible" style="color:darkgreen;font-size:20px;">Click Here</button>
+<div class="content">
+  <table>Good Result comes here!!!</table>
+</div>
+        </div>
+    </div>
+    </div>
+         </div>
+
+<footer>
+    <div class="content-footer">
+        Company name:Smashing Pixels Inc<br><br>
+        Contact information: 446 Grey Street, Unit 302
+        (with Ball Media)
+        Brantford , ON N3S 7L6
+        Tel: (226) 250-0112</div>
+</footer>
+    </div>
+    
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+        var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+         </body>
+
+</html>

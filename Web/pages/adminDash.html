@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../styles/main.css">
+
+<head>
+        <title>Admin Dashboard</title>
+</head>
+    
+    
+<body>
+     <div id="page-container">
+     <header>
+        
+                                <div class="topnav" id="myTopnav">
+                                    <a class="logo">Smart Simple SEO</a>
+                                <a href="../index.html">Home</a>
+                                <a id="dashboardclick" href="#"  class="active">Dashboard</a>
+                                <a href="../pages/login.html">Login/Sign up</a>
+                                <a href="#">Contact</a>
+                                      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                          <i class="fa fa-bars"></i>
+                                    </a>
+                </div>
+        </header>
+         
+        <form id="form_admin" class="form03">
+            <div class="row">
+                <h3>Report</h3> <br>
+                Report From:&nbsp;<input class="signUp" type="date" name="fromDate" >&nbsp;
+                To:&nbsp;<input class="signUp" type="date" name="toDate"><br><br>
+                <button onclick="window.location.href = '../pages/adminReport.html';" class="userbtn" type="submit" name="submit" id="report">Done</button><br><br>
+            </div>
+            <div class="row">
+                <div class="column">
+                <h3>Grant Free Access</h3>
+                    <p id="userError">Error Comes here!!</p>
+                <label for="firstName">First name:</label>
+            <input id="firstName" class="signUp" type="text" placeholder="User FirstName" size="40" name="firstName" required><br><br>
+            <label for="lastName">Last name:</label>
+            <input id="lastName" class="signUp" type="text" placeholder="User LastName" size="40" name="lastName" required><br><br>
+            <label for="email">Email:</label>
+            <input id="email" class="signUp" type="email" placeholder="Enter Email" size="46" name="email" required><br><br>
+            Free access until:<input type="date" name="toDate"><br><br>
+
+            <button class="userbtn" type="submit" name="submit" id="search">Search</button><br>
+                    </div>
+                           <div class="column">
+                <h3>User Information</h3>
+            <label for="firstName">First name:</label>
+                <label for="firstName" id="" type="text"></label><br><br>
+            <label for="lastName">Last name:</label>
+                <label for="lastName" id="" type="text"></label><br><br>
+            <label for="email">Email:</label>
+            <label for="email" id="" type="email"></label><br><br><br><br>
+
+            <button class="userbtn" type="submit" name="submit" id="grant-free">Grant Free Access</button><br>
+                    <br>
+            <button class="userbtn" id="logout" href="#" class="logout">Log Out</button>
+                               </div>
+              </div>
+            </form>
+            
+<footer>
+    <div class="content-footer">
+        Company name:Smashing Pixels Inc<br><br>
+        Contact information: 446 Grey Street, Unit 302
+        (with Ball Media)
+        Brantford , ON N3S 7L6
+        Tel: (226) 250-0112</div>
+</footer>
+    </div>
+    
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<script src="../scripts/adminDash.js"></script>
+<script src="../scripts/logout.js"></script>
+         </body>
+
+</html>

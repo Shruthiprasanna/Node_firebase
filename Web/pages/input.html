@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../styles/main.css">
+
+
+
+<head>
+    <title>Input Page</title>
+</head>
+
+
+<body>
+    <div id="page-container">
+        <header>
+
+            <div class="topnav" id="myTopnav">
+                <a class="logo">Smart Simple SEO</a>
+                <a href="../index.html">Home</a>
+                <a id="dashboardclick" class="active">Dashboard</a>
+                <a href="../pages/login.html">Login/Sign up</a>
+                <a href="#">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
+
+        <div id="content-wrap">
+            <form class="form01">
+                <div class="input01" id="enterUrl">
+                    <label for="enterURL" text="bold">Enter your webpage URL:</label><br><br>
+                    <input id="enterURL" placeholder="Your URL" type="url" name="url" size="100" required><br><br>
+                </div>
+                <br><br>
+                <div>
+                    <input type="radio" id="rbtnCompareCompetitor" name="typeComparison" value="competitorURL"
+                        name="radioBtn" />
+                    <label for="compareToURL">Compare your webpage with one or more competitor</label>
+                    <p>Choose this option if you have a competitor website to which you wish to compare your own webpage
+                    </p>
+                </div>
+                <br>
+                <div id="knownURL">
+                    <label for="enterCompetitor1URL">Enter competitor webpage URL:</label>
+                    <input type="url" name="url" id="enterCompetitor1URL" placeholder="Competitor URL" required><br><br>
+                    <div id="ifYes">
+                        <label for="enterCompetitor2URL">Enter competitor webpage URL:</label>
+                        <input type="url" name="url" placeholder="Optional" id="enterCompetitor2URL"><br><br>
+                        <label>Enter competitor webpage URL:</label>
+                        <input type="url" name="url" placeholder="Optional"><br><br>
+                        <label for="enterKeyword">Enter a keyword:</label>
+                        <input id="enterKeyword" placeholder="Enter One keyword please" type="text" name="keyword"
+                            size="38" required><br>
+                    </div>
+                </div>
+                <br><br>
+                <div>
+                    <input type="radio" id="rbtnCompareGoogle" name="typeComparison" value="googleResultPage"
+                        name="radioBtn" />
+                    <label for="compareToGoogle">Compare your webpage with the top Google search results</label>
+                    <p>Choose this option if you hope to rank higher in Google search results. Note that you will be
+                        required to enter keywords and a location for this option</p>
+                </div>
+                <br><br>
+                <div id="googleResults">
+                    <label for="enterLocation">Enter your location:</label>
+                    <input id="enterLocation" placeholder="Please enter a city name" type="text" name="location"
+                        size="35"><br><br>
+                    <label for="enterKeyword">Enter a keyword:</label>
+                    <input id="enterKeyword" placeholder="Enter One keyword please" type="text" name="keyword" size="38"
+                        required><br>
+                </div>
+                <br><br><br><br>
+                <div class="wrapper">
+                    <button id="compare" class="userbtn" >Get My
+                        Result</button>
+                    <br><br>
+                </div>
+
+            </form>
+        </div>
+
+
+        <footer>
+            <div class="content-footer">
+                Company name:Smashing Pixels Inc<br><br>
+                Contact information: 446 Grey Street, Unit 302
+                (with Ball Media)
+                Brantford , ON N3S 7L6
+                Tel: (226) 250-0112</div>
+        </footer>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <script src="../scripts/input.js"></script>
+</body>
+
+</html>
