@@ -11,7 +11,7 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
-    "firebase-admin": "^8.3.0",
+    "firebase-admin": "^11.4.1",
     "html-word-count": "2.0.0",
     "node-fetch": "^2.6.0",
     "path": "^0.12.7"
